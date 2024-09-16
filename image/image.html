@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image chapter</title>
+  </head>
+  <body>
+    <h1>Comprehensive HTML Image Handling</h1>
+
+    <h2>1. Basic Image Embedding</h2>
+    <p><b>Example of embedding images with different attributes:</b></p>
+    <img
+      src="embedding.jpg"
+      alt=" Example of Embeddings Image"
+      width="300"
+      height="200"
+    />
+    <p>This is a placeholder image with width and height attributes.</p>
+
+    <h2>2. Image Formats</h2>
+    <p><b>JPEG Image:</b></p>
+    <img src="blackcat.jpg" alt="A black cat" width="300" height="200" />
+    <p><b>PNG Image:</b></p>
+    <img src="panther.png" alt="the head of panther" width="300" height="200" />
+    <p><b>SVG Image:</b></p>
+    <img src="men.svg" alt="A man with board" width="300" height="200" />
+    <p><b>GIF Image:</b></p>
+    <img src="boat.gif" alt="Paper boat" width="256" height="256" />
+
+    <h2>3. Image Maps</h2>
+    <p><b>Example of an image map with clickable areas:</b></p>
+    <img
+      src="map.jpg"
+      alt="Clickable Map"
+      width="500"
+      height="300"
+      usemap="#image-map"
+    />
+    <map name="image-map">
+      <area
+        shape="rect"
+        coords="36,44,270,350"
+        href="https://www.google.com/maps/@24.7386343,69.7908842,15z?entry=ttu&g_ep=EgoyMDI0MDkxMC4wIKXMDSoASAFQAw%3D%3D"
+        alt="Example"
+      />
+      <area
+        shape="circle"
+        coords="400,150,50"
+        href="https://www.google.com/maps/@24.7386343,69.7908842,15z?entry=ttu&g_ep=EgoyMDI0MDkxMC4wIKXMDSoASAFQAw%3D%3D"
+        alt="Circle Example"
+      />
+    </map>
+
+    <h2>4. Responsive Images</h2>
+    <p><b>Example of responsive images using srcset:</b></p>
+    <img
+      src="ferrari1.jpg"
+      srcset="ferrari1.jpg 320w, ferrari1.jpg 960w,
+    sizes=(min-width: 37.5em) calc(50vw - 2rem), calc(100vw - 2rem)"
+      alt="A red ferrari
+    "
+    />
+
+    <p><b>Example using the picture element:</b></p>
+    <picture>
+      <source srcset="ferrari1.jpg 960w" type="image" />
+      <source srcset="ferrari1.jpg 850w" type="image" />
+      <img src="ferrari1.jpg" alt="ferrari" />
+    </picture>
+
+    <h2>5. Image Gallery</h2>
+    <p><b>Example of a basic image gallery:</b></p>
+    <img
+      src="gallery1.jpg"
+      alt="Woman Looking At Paintings Displayed On The Wall"
+      width="300"
+      height="200"
+    />
+    <img
+      src="gallery2.jpg"
+      alt="Exhibit Painting Display"
+      width="300"
+      height="200"
+    />
+    <img
+      src="gallery3.jpg"
+      alt="Man and Woman Across Mummies"
+      width="300"
+      height="200"
+    />
+    <img
+      src="gallery4.jpg"
+      alt="Open Books With Glass Case Inside Room"
+      width="300"
+      height="200"
+    />
+  </body>
+</html>
