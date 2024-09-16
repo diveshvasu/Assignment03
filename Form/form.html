@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Chapter</title>
+  </head>
+  <body>
+    <h1>Complex HTML Form Assignment</h1>
+    <form action="" method="post">
+      <fieldset>
+        <legend><b>Persoal Information</b></legend>
+        <label for="Full Name">Full Name:</label>
+        <input
+          type="text"
+          id="full name"
+          name="full name"
+          placeholder="John Doe"
+        />
+        <br />
+        <br />
+        <label for="Email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="someone@someone.com"
+          required
+        />
+        <br /><br />
+        <label for="Phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="Phone"
+          name="Phone"
+          maxlength="11"
+          placeholder="123-456-789"
+          required
+        />
+        <br /><br />
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="dob" required /> <br /><br />
+        <fieldset>
+          <legend><b>Gender</b></legend>
+          <label for="male">
+            <input
+              type="radio"
+              id="male"
+              name="Gender"
+              value="male"
+              required
+            />Male
+          </label>
+          <br />
+          <label for="female">
+            <input
+              type="radio"
+              id="female"
+              name="Gender"
+              value="female"
+            />Female
+          </label>
+          <br />
+          <label for="other">
+            <input type="radio" id="other" name="Gender" value="other" />Other
+          </label>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend><b>Address</b></legend>
+
+        <label for="address">Street Address:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          required
+          placeholder="123 Main St"
+        /><br /><br />
+
+        <label for="city">City:</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          required
+          placeholder="City"
+        /><br /><br />
+
+        <label for="state">State/Province:</label>
+        <input
+          type="text"
+          id="state"
+          name="state"
+          required
+          placeholder="State/Province"
+        /><br /><br />
+
+        <label for="postal-code">Postal/ZIP Code:</label>
+        <input
+          type="text"
+          id="postal-code"
+          name="postal_code"
+          placeholder="12345 or 12345-6789"
+          required
+        /><br /><br />
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select a country</option>
+          <option value="Pak">Pakistan</option>
+          <option value="eng">England</option>
+          <option value="nz">Newzeland</option>
+          <option value="africa">Africa</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend><b>Preferences</b></legend>
+
+        <p>Preferred Contact Method:</p>
+        <label for="email-contact">
+          <input
+            type="checkbox"
+            id="email-contact"
+            name="contact_method"
+            value="email"
+          />
+          Email </label
+        ><br />
+        <label for="phone-contact">
+          <input
+            type="checkbox"
+            id="phone-contact"
+            name="contact_method"
+            value="phone"
+          />
+          Phone </label
+        ><br />
+        <label for="post-contact">
+          <input
+            type="checkbox"
+            id="post-contact"
+            name="contact_method"
+            value="post"
+          />
+          Post </label
+        ><br /><br />
+
+        <label for="subscription">Subscription Preferences:</label>
+        <select id="subscription" name="subscription" required>
+          <option value="">Select an option</option>
+          <option value="newsletter">Newsletter</option>
+          <option value="updates">Updates</option>
+          <option value="promotions">Promotions</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend><b>Feedback</b></legend>
+        <label for="comments">Comments:</label> <br />
+        <textarea
+          name="comments"
+          id="comments"
+          rows="3"
+          cols="25"
+          placeholder="yours Comments here!"
+        ></textarea>
+        <p>Rating</p>
+        <label for="rating1">
+          <input
+            type="radio"
+            id="rating1"
+            name="Rating"
+            value="rating1"
+            required
+          />
+          1
+        </label>
+        <label for="rating2">
+          <input type="radio" name="Rating" id="rating2" value="rating2" />2
+        </label>
+        <label for="rating3">
+          <input type="radio" name="Rating" id="rating3" value="rating3" />3
+        </label>
+        <label for="rating4">
+          <input type="radio" name="Rating" id="rating4" value="rating4" />4
+        </label>
+        <label for="rating5">
+          <input type="radio" name="Rating" id="rating5" value="rating5" />5
+        </label>
+      </fieldset>
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
